@@ -70,14 +70,6 @@
 			"type": "http",
 			"url": "http://cafeasglb-929716934.ap-south-1.elb.amazonaws.com/cafe/"
 		}
-	},
-	{
-		"type": "probe",
-		"name": "website-must-still-respond",
-		"provider": {
-			"type": "http",
-			"url": "http://cafeasglb-929716934.ap-south-1.elb.amazonaws.com/cafe/"
-		}
 	}
 	]
 }
