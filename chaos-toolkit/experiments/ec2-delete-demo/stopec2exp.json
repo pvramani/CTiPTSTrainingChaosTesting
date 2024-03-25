@@ -15,7 +15,7 @@
 				"arguments": {
 					"state": "running",
 					"instance_ids": [
-					    "i-01c92ca4d5ccbe3f2"
+					    "i-0a641ec94c4f7cab6"
 					],
 					"filters": []
 				}
@@ -33,7 +33,7 @@
 			"module": "chaosaws.ec2.actions", 
 			"func": "stop_instance", 
 			"arguments": {
-				"instance_id": "i-01c92ca4d5ccbe3f2"
+				"instance_id": "i-0a641ec94c4f7cab6"
 			}
 		},
 		"pauses": {
@@ -45,7 +45,7 @@
 		"name": "website-must-still-respond",
 		"provider": {
 			"type": "http",
-			"url": "http://3.109.21.78/cafe/"
+			"url": "http://65.0.34.148/cafe/"
 		}
 	},
 	{
@@ -56,7 +56,7 @@
 		  "module": "chaosaws.ec2.actions",
 		  "func": "start_instances",
 		  "arguments": {
-			"instance_ids": ["i-01c92ca4d5ccbe3f2"]
+			"instance_ids": ["i-0a641ec94c4f7cab6"]
 		}
 		},
 		"pauses": {
@@ -68,7 +68,7 @@
 		"name": "website-must-still-respond",
 		"provider": {
 			"type": "http",
-			"url": "http://3.109.21.78/cafe/"
+			"url": "http://65.0.34.148/cafe/"
 		}
 	}
 	]
